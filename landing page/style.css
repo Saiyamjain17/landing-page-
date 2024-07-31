@@ -1,0 +1,124 @@
+@font-face {
+    src: url('fonts/OneDirection.ttf') format("truetype");
+    font-family: nos;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('pic.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.paragraph2 {
+    text-align: center;
+    font-size: 6rem;
+    font-family: nos;
+    color: white;
+    margin-top: 0;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.menu-bar {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar ul li {
+    font-family: 'Impact', sans-serif;
+    width: 120px;
+    margin: 0 15px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-bar ul li:hover {
+    background: floralwhite;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.paragraph5 {
+    font-size: 1.25rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 2rem;
+    text-align: center;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.lets-go-btn {
+    color: floralwhite;
+    background: linear-gradient(45deg, rgb(227, 26, 26), rgb(255, 87, 87));
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 2rem;
+    transition: background 0.3s;
+}
+
+.lets-go-btn:hover {
+    background: rgb(54, 1, 1);
+}
+
+.icons {
+    display: flex;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icons a {
+    transition: transform 0.3s;
+}
+
+.icons a:hover {
+    transform: scale(1.5);
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.p1 {
+    color: floralwhite;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
